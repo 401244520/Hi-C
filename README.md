@@ -12,3 +12,6 @@ This is a course exercise, applying LDA in single cell Hi-C data.
 ## Result
 ![result](https://github.com/401244520/ML-Course/blob/master/result.jpg)
 
+## Usage
+python main.py --arg
+
