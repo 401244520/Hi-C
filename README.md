@@ -10,5 +10,5 @@ This is a course exercise, applying LDA in single cell Hi-C data.
 - matplotlib
 
 ## Result
-![result](https://github.com/401244520/ML-Course/blob/result.jpg)
+![result](https://github.com/401244520/ML-Course/blob/master/result.jpg)
 
