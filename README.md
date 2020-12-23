@@ -9,13 +9,15 @@ This is a course exercise, applying LDA in single cell Hi-C data.
 - pandas
 - matplotlib
 
-## Rrduction
+## Rerduction
+### Three type cell lines single cell Hi-C data with labels, each of them include 77 samples.
+The yellow represent OSN cells,purple represent mESC cells, while green represent NMuMG cells, all of them are mapped to mm10 refrence genmome and binned in a specific way.
 ![result](https://github.com/401244520/ML-Course/blob/master/reduction.png?raw=true)
 
 ## Classifier
 ![result](https://github.com/401244520/ML-Course/blob/master/classifier.png?raw=true)
 
 ## Usage
-1. python main.py --reduction
-2. python main.py --reduction
+### python main.py --reduction
+### python main.py --reduction
 
