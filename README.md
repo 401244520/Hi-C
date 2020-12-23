@@ -12,9 +12,10 @@ This is a course exercise, applying LDA in single cell Hi-C data.
 ## Rrduction
 ![result](https://github.com/401244520/ML-Course/blob/master/reduction.png?raw=true)
 
-##Classifier
+## Classifier
 ![result](https://github.com/401244520/ML-Course/blob/master/classifier.png?raw=true)
 
 ## Usage
-python main.py --arg
+1. python main.py --reduction
+2. python main.py --reduction
 
