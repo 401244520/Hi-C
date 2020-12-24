@@ -15,7 +15,9 @@ The yellow represent OSN cells,purple represent mESC cells, while green represen
 ![result](https://github.com/401244520/ML-Course/blob/master/reduction.png?raw=true)
 
 ## Classifier
-![result](https://github.com/401244520/ML-Course/blob/master/classifier.png?raw=true)
+![result](https://github.com/401244520/ML-Course/blob/master/202020.png?raw=true)
+![result](https://github.com/401244520/ML-Course/blob/master/777777.png?raw=true)
+![result](https://github.com/401244520/ML-Course/blob/master/2007799.png?raw=true)
 
 ## Usage
 ### python main.py --reduction
