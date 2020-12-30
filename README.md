@@ -8,6 +8,7 @@ This is a course exercise, applying LDA in single cell Hi-C data.
 - numpy
 - pandas
 - matplotlib
+- sikit-learn
 
 ## Rerduction
 ### Three type cell lines single cell Hi-C data with labels, each of them include 77 samples.
