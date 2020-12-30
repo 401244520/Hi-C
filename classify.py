@@ -42,23 +42,25 @@ def redu_plot(sample,label):
     plt.title('t-SNE')
     X_tsne=TSNE(n_components=2).fit_transform(sample)    
     plt.scatter(X_tsne[:, 0],X_tsne[:, 1],marker='o',c = label)
-#    plt.savefig('reduction.jpg')
+    plt.savefig('reduction_{}.jpg'.format(amount))
 def classifier(sample,label,test):
     clf = LDA().fit(sample,label)
     plt.figure(figsize=(15,5))
-    plt.title('Test1')
+    plt.title('sample_amount:'+str(amount))
     plt.ylim(-1,2)
     plt.scatter(range(len(test)),clf.predict(test))
-#    plt.savefig('classifier,jpg')
+    plt.savefig('classifier_{}.jpg'.format(amount))
 def sampling(*args):
-    data = pd.read_table('./data/allsamples_pca.txt',sep = ',')
-    ind = pd.read_table('./data/sana_mESC.csv',sep = ',')
+    global amount
+    amount = args
+    data = pd.read_table('/store/zlwang/git/tmp/allsamples_pca.txt',sep = ',')
+    ind = pd.read_table('/store/zhhe/single-cell/sana_mESC.csv',sep = ',')
     ind = ind.set_index('Sample.Name')
     data.columns = data.columns.map(lambda x :match(ind,x))
     data = data.T
-    sample1 = data.loc['Mouse Embryonic Stem Cell Line E14'][:args[0]] 
+    sample1 = data.loc['Mouse Embryonic Stem Cell Line E14'][:args[0]]
     sample2 = data.loc['NMuMG'][:args[1]]
-    data3 = pd.read_table('./data/OSN_pca.txt',sep = ',')
+    data3 = pd.read_table('/store/zlwang/git/tmp/OSN_pca.txt',sep = ',')
     data3 = data3.T
     sample3 = data3[:args[2]]
     (sample,label) = sample_merge([sample1,sample2,sample3]) 
