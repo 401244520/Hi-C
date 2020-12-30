@@ -56,7 +56,7 @@ def sampling(*args):
     ind = ind.set_index('Sample.Name')
     data.columns = data.columns.map(lambda x :match(ind,x))
     data = data.T
-    sample1 = data.loc['Mouse Embryonic Stem Cell Line E14'][:args[0]] #177
+    sample1 = data.loc['Mouse Embryonic Stem Cell Line E14'][:args[0]] 
     sample2 = data.loc['NMuMG'][:args[1]]
     data3 = pd.read_table('./data/OSN_pca.txt',sep = ',')
     data3 = data3.T
